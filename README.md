@@ -1,6 +1,6 @@
 # Sumbawanga/Tanzania Hilfsprojekt
 
-### Informationen
+## Informationen
 #### @Facebook:
 [https://de-de.facebook.com/sumbawangamedprojekt](https://de-de.facebook.com/sumbawangamedprojekt)
 
@@ -10,7 +10,7 @@
 #### @Interplast e.V.
 [https://www.interplast-germany.de/category/sektion-nur-sachsen/](https://www.interplast-germany.de/category/sektion-nur-sachsen/)
 
-### Reports
+## Reports
 
-#### 2019
+### 2019
 [20./21. Einsatz](Reports/2019/20_21.md)
