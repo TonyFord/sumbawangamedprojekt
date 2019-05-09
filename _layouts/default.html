@@ -42,9 +42,8 @@
         </ul>
       </nav>
       <section>
-        <span id="logo"></span>
+        <div id="logo"><img src="{{ site.logo | relative_url }}"></div>
         {{ content }}
-
       </section>
       <footer>
         {% if site.github.is_project_page %}
