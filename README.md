@@ -1,4 +1,6 @@
 # Sumbawanga/Tanzania Homepage
+<img src="assets/images/logo.jpg" style="position:static; top:0px; right:0px;"></img>
+
 
 ## Informationen
 #### @Facebook:
