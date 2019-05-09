@@ -432,6 +432,10 @@ footer {
   body {
     word-wrap:break-word;
   }
+  
+  #logo {
+    width:50%;
+  }
 
   header {
     padding:20px 20px;
@@ -478,10 +482,6 @@ footer {
 
 @media print, screen and (max-width: 480px) {
   body {
-  }
-  
-  #logo {
-    width:50%;
   }
 
   header{
