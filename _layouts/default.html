@@ -21,7 +21,7 @@
         <p>{{ site.description | default: site.github.project_tagline }}</p>
       </header>
 
-      <div id="banner">
+      <div id="banner" style="display:none;">
         <span id="logo"></span>
 
         <a href="{{ site.github.repository_url }}" class="button fork"><strong>View On GitHub</strong></a>
@@ -36,7 +36,7 @@
         {% endif %}
       </div><!-- end banner -->
 
-    <div class="wrapper d-none">
+    <div class="wrapper">
       <nav>
         <ul>
           <li><a href="{{ '/' | relative_url }}">Home</a></li>
