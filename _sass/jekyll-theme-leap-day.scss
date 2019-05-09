@@ -291,7 +291,6 @@ header {
 }
 
 section {
-  z-index:100;
   width:590px;
   padding: 30px 30px 50px 30px;
   margin: 20px 0;
@@ -475,6 +474,10 @@ footer {
 
 @media print, screen and (max-width: 480px) {
   body {
+  }
+  
+  #logo {
+    width:50%;
   }
 
   header{
