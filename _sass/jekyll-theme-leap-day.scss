@@ -168,6 +168,7 @@ header {
   z-index:99;
   -webkit-font-smoothing:antialiased;
   min-height: 76px;
+  z-index:5;
 
   h1 {
     font: 40px/48px 'Copse', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -179,6 +180,7 @@ header {
     text-overflow: ellipsis;
     -o-text-overflow: ellipsis;
     -ms-text-overflow: ellipsis;
+    z-index:20;
   }
 
   p {
@@ -186,7 +188,17 @@ header {
     text-shadow:rgba(#000, 0.2) 0 1px 0;
     font-size: 18px;
     margin: 0px;
+    z-index:20;
   }
+  
+  img {
+    position: fixed;
+    top: 1rem;
+    right; 1rem;
+    border: 0.2rem solid grey;
+    z-index:10;
+  }
+  
 }
 
 #banner {
@@ -278,6 +290,7 @@ header {
 }
 
 section {
+  z-index:100;
   width:590px;
   padding: 30px 30px 50px 30px;
   margin: 20px 0;
