@@ -9,11 +9,15 @@ by Matt Graham
 
 #logo {
   float: right;
-  margin-right: -1rem;
+  margin-right: 0.5rem;
   margin-top: -1rem;
   text-align: right;
+  height:0px;
   img {
     border: 0.2rem solid grey;
+    transform: rotate(3deg);
+    box-shadow: 5px 10px;
+    border-radius: 0.3rem;
   }
 }
 
@@ -41,6 +45,7 @@ h1, h2, h3 {
 
 h1 {
   font-size:28px;
+  padding-bottom: 2rem;
 }
 
 h2 {
