@@ -2,6 +2,4 @@ theme: jekyll-theme-leap-day
 title: Sumbawanga/Tanzania Hilfsprojekt
 description: Öffentliche Übersicht über alle Informationen über das Hilfsprojekt
 logo: assets/images/logo.jpg
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+markdown: kramdown
