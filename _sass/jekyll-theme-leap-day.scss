@@ -266,8 +266,11 @@ nav {
       }
 
       &.tag-h2 {
-        color:black;
-
+        
+        a {
+          color:black;
+        }
+        
         + .tag-h1 {
           margin-top:10px;
         }
