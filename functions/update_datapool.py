@@ -120,7 +120,7 @@ def updateFile(fn):
             for i,c in enumerate(COLUMNS):
 
                 if(NEED_COLUMNS[i]=='Kategorie'):
-                    if( row[c] == 'SPENDE' ):
+                    if( row[c] == 'SPENDE' or row[c] == 'VISA' ):
                         istSpende=True
                     else:
                         istSpende=False
