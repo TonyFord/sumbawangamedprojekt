@@ -1,5 +1,7 @@
 # 2019
 
+<link rel="stylesheet" type="text/css" media="all" href="../../assets/css/style.scss" />
+
 
 | Konto | Startbetrag | Haben | Soll | Endbetrag | Differenz |
 | ------ | ------:| ------:| ------:| ------:| ------:|
