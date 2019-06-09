@@ -149,7 +149,9 @@ def updateFile(fn):
 
     tmp='## '+jahr
     tmp+='\n#### '+konto
-    tmp+='\n\n\n'
+    tmp+='\n[CSV]('+konto+'.csv) '
+    tmp+='/ [JSON]('+konto+'.json) '
+    tmp+='\n\n\n\n\n'
 
     ### markdown table headline
     for v in NEED_COLUMNS:
