@@ -58,7 +58,8 @@ def insertSummary(fn_jahr):
     if( fn_jahr != '' ):
 
         ## write summary to year
-        tmp='# '+fn_jahr[-15:-11]+'\n\n\n'
+        tmp='# '+fn_jahr[-15:-11]+'\n'
+        tmp+='## Summary\n\n\n'
 
         ### haben/soll
         tmp+='| Konto | Startbetrag | Haben | Soll | Endbetrag | Differenz |\n'
@@ -81,11 +82,11 @@ def insertSummary(fn_jahr):
             summe_soll+=soll
             summe_saldo+=saldo
             summe_differenz+=differenz
-            tmp+='| '+konto+' | '+ fcurrency(startbetrag) + ' | '+fcurrency(haben)+' | '+fcurrency(soll)+' | '+fcurrency(saldo)+' | '+fcurrency(differenz)+' |\n'
+            tmp+='| ['+konto+'](#'+konto+') | '+ fcurrency(startbetrag) + ' | '+fcurrency(haben)+' | '+fcurrency(soll)+' | '+fcurrency(saldo)+' | '+fcurrency(differenz)+' |\n'
 
         ### add summation
         tmp+='| **TOTAL** | **'+fcurrency(summe_startbetrag)+ '** | **'+fcurrency(summe_haben)+'** | **'+fcurrency(summe_soll)+'** | **'+fcurrency(summe_saldo)+'** | **'+fcurrency(summe_differenz)+'** |\n'
-
+        tmp+='\n<hr>'
 
 
         file=open(fn_jahr,'r')
@@ -225,7 +226,7 @@ def updateFile(fn):
             jahr=f
 
     ### add account title
-    tmp='\n## '+konto
+    tmp='\n### '+konto
     tmp+='\n[MD]('+konto+'.md) '
     tmp+='/ [CSV]('+konto+'.csv) '
     tmp+='/ [JSON]('+konto+'.json) '
