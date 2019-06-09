@@ -257,7 +257,13 @@ def updateFile(fn):
                 tmp+='| ['+col+']('+row[NEED_COLUMNS.index('BelegURL')]+') '
             elif(NEED_COLUMNS[j]!='BelegURL'):
                 if(COLUMN_DECIMALS[j][0]):
-                    col=fcurrency(col,COLUMN_DECIMALS[j][1])
+                    if(float(col)<0 and COLUMN_DECIMALS[j][1] ):
+                        fc='<font color="red">'
+                    elif(float(col)>0 and COLUMN_DECIMALS[j][1] ):
+                        fc='<font color="green">'
+                    else:
+                        fc=''
+                    col=fc+fcurrency(col,COLUMN_DECIMALS[j][1])+('</font>' if fc != '' else '' )
                 tmp+='| '+col+' '
         tmp+='|\n'
 
