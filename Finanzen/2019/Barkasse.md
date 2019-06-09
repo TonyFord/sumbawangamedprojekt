@@ -3,8 +3,9 @@
 ## Barkasse
 [MD](Barkasse.md) / [CSV](Barkasse.csv) / [JSON](Barkasse.json) 
 
+
 | Startbetrag | Haben | Soll | Endbetrag | Differenz |
-| ------:| ------:| ------:| ------:| ------:| ------:|
+| ------:| ------:| ------:| ------:| ------:|
 | 1172.29 | 12039.49 | 14891.49 | -2852.00 | -4024.29 |
 
 

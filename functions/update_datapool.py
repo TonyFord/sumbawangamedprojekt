@@ -35,6 +35,7 @@ COLUMN_DECIMALS=[
 ]
 
 FN_JAHR=''
+SUMMARY=[]
 
 class bcolors:
     HEADER = '\033[95m'
@@ -46,17 +47,66 @@ class bcolors:
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
 
+def insertSummary(fn_jahr):
+    global SUMMARY
+
+    print(fn_jahr)
+    if( fn_jahr != '' ):
+
+        ## write summary to year
+        tmp='# '+fn_jahr[-15:-11]+'\n\n\n'
+
+        ### haben/soll
+        tmp+='| Konto | Startbetrag | Haben | Soll | Endbetrag | Differenz |\n'
+        tmp+='| ------ | ------:| ------:| ------:| ------:| ------:|\n'
+
+        summe_startbetrag=0
+        summe_haben=0
+        summe_soll=0
+        summe_saldo=0
+        summe_differenz=0
+        for summary in SUMMARY:
+            konto=summary[0]
+            startbetrag=summary[1]
+            haben=summary[2]
+            soll=summary[3]
+            saldo=summary[4]
+            differenz=saldo-startbetrag
+            summe_startbetrag+=startbetrag
+            summe_haben+=haben
+            summe_soll+=soll
+            summe_saldo+=saldo
+            summe_differenz+=differenz
+            tmp+='| '+konto+' | '+( '{:10.2f}'.format(startbetrag) ).strip()+ ' | '+( '{:10.2f}'.format(haben) ).strip()+' | '+( '{:10.2f}'.format(soll) ).strip()+' | '+( '{:10.2f}'.format(saldo) ).strip()+' | '+( '{:10.2f}'.format(differenz) ).strip()+' |\n'
+
+        ### add summation
+        tmp+='| TOTAL | '+( '{:10.2f}'.format(summe_startbetrag) ).strip()+ ' | '+( '{:10.2f}'.format(summe_haben) ).strip()+' | '+( '{:10.2f}'.format(summe_soll) ).strip()+' | '+( '{:10.2f}'.format(summe_saldo) ).strip()+' | '+( '{:10.2f}'.format(summe_differenz) ).strip()+' |\n'
+
+
+
+        file=open(fn_jahr,'r')
+        t=file.read()
+        file.close()
+
+        file=open(fn_jahr,'w+')
+        file.write( tmp + t)
+        file.close()
+
+
 def getFD(ffd):
     global FN_JAHR
+    global SUMMARY
     FD=glob(ffd+'*')
     FD.sort()
     for fd in FD:
         if(os.path.isdir(fd)):
             if(fd[0:14] == '../Finanzen/20' and len(fd) == 16 ):
+                insertSummary(FN_JAHR)
                 FN_JAHR=fd+'/summary.md'
                 file=open(FN_JAHR,'w+')
-                file.write('# '+fd[-4:]+'\n')
+                file.write('')
                 file.close()
+                SUMMARY=[]
             getFD(fd+'/')
         else:
             if(fd[-4:] == '.csv'):
@@ -81,6 +131,7 @@ def detectColumns(headline):
 
 def updateFile(fn):
     global FN_JAHR
+    global SUMMARY
 
     file=open(fn,'r')
     t=file.read()
@@ -174,13 +225,14 @@ def updateFile(fn):
     tmp+='\n[MD]('+konto+'.md) '
     tmp+='/ [CSV]('+konto+'.csv) '
     tmp+='/ [JSON]('+konto+'.json) '
-    tmp+='\n\n'
+    tmp+='\n\n\n'
 
     ### haben/soll
     differenz=saldo-startbetrag
     tmp+='| Startbetrag | Haben | Soll | Endbetrag | Differenz |\n'
-    tmp+='| ------:| ------:| ------:| ------:| ------:| ------:|\n'
+    tmp+='| ------:| ------:| ------:| ------:| ------:|\n'
     tmp+='| '+( '{:10.2f}'.format(startbetrag) ).strip()+ ' | '+( '{:10.2f}'.format(haben) ).strip()+' | '+( '{:10.2f}'.format(soll) ).strip()+' | '+( '{:10.2f}'.format(saldo) ).strip()+' | '+( '{:10.2f}'.format(differenz) ).strip()+' |\n\n\n'
+    SUMMARY.append([konto,startbetrag,haben,soll,saldo])
 
     ### markdown table headline
     for v in NEED_COLUMNS:
@@ -221,3 +273,4 @@ def updateFile(fn):
 
 
 getFD('../Finanzen/')
+insertSummary(FN_JAHR)
