@@ -33,6 +33,6 @@ $(function() {
   
   // hide logo 
   if( $('#logo img').attr('alt').match(/^Finanzen/g) != null ){
-    $('#logo').css('display','none);
+    $('#logo').css('display','none');
   }
 });
