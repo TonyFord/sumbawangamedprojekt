@@ -82,7 +82,7 @@ def insertSummary(fn_jahr):
             summe_soll+=soll
             summe_saldo+=saldo
             summe_differenz+=differenz
-            tmp+='| ['+konto+'](#'+konto+') | '+ fcurrency(startbetrag) + ' | '+fcurrency(haben)+' | '+fcurrency(soll)+' | '+fcurrency(saldo)+' | '+fcurrency(differenz)+' |\n'
+            tmp+='| ['+konto+'](#'+(konto.replace('.','')).lower()+') | '+ fcurrency(startbetrag) + ' | '+fcurrency(haben)+' | '+fcurrency(soll)+' | '+fcurrency(saldo)+' | '+fcurrency(differenz)+' |\n'
 
         ### add summation
         tmp+='| **TOTAL** | **'+fcurrency(summe_startbetrag)+ '** | **'+fcurrency(summe_haben)+'** | **'+fcurrency(summe_soll)+'** | **'+fcurrency(summe_saldo)+'** | **'+fcurrency(summe_differenz)+'** |\n'
