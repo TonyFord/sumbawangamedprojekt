@@ -4,6 +4,7 @@ import os
 from glob import glob
 from decimal import *
 import re
+from babel.numbers import format_currency
 
 NEED_COLUMNS=[
     'Beleg',
@@ -25,13 +26,13 @@ COLUMN_ALIGNMENT=[
 ]
 
 COLUMN_DECIMALS=[
-    False,
-    False,
-    False,
-    False,
-    False,
-    True,
-    True
+    [False,False],
+    [False,False],
+    [False,False],
+    [False,False],
+    [False,False],
+    [True,True],
+    [True,False]
 ]
 
 FN_JAHR=''
@@ -46,6 +47,9 @@ class bcolors:
     ENDC = '\033[0m'
     BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
+
+def fcurrency(betrag,plus=False):
+    return format_currency(betrag, 'EUR', format=('+' if plus else '')+'#,##0.##;-#,##0.##', locale='de')
 
 def insertSummary(fn_jahr):
     global SUMMARY
@@ -77,10 +81,10 @@ def insertSummary(fn_jahr):
             summe_soll+=soll
             summe_saldo+=saldo
             summe_differenz+=differenz
-            tmp+='| '+konto+' | '+( '{:10.2f}'.format(startbetrag) ).strip()+ ' | '+( '{:10.2f}'.format(haben) ).strip()+' | '+( '{:10.2f}'.format(soll) ).strip()+' | '+( '{:10.2f}'.format(saldo) ).strip()+' | '+( '{:10.2f}'.format(differenz) ).strip()+' |\n'
+            tmp+='| '+konto+' | '+ fcurrency(startbetrag) + ' | '+fcurrency(haben)+' | '+fcurrency(soll)+' | '+fcurrency(saldo)+' | '+fcurrency(differenz)+' |\n'
 
         ### add summation
-        tmp+='| TOTAL | '+( '{:10.2f}'.format(summe_startbetrag) ).strip()+ ' | '+( '{:10.2f}'.format(summe_haben) ).strip()+' | '+( '{:10.2f}'.format(summe_soll) ).strip()+' | '+( '{:10.2f}'.format(summe_saldo) ).strip()+' | '+( '{:10.2f}'.format(summe_differenz) ).strip()+' |\n'
+        tmp+='| **TOTAL** | **'+fcurrency(summe_startbetrag)+ '** | **'+fcurrency(summe_haben)+'** | **'+fcurrency(summe_soll)+'** | **'+fcurrency(summe_saldo)+'** | **'+fcurrency(summe_differenz)+'** |\n'
 
 
 
@@ -194,7 +198,7 @@ def updateFile(fn):
                         startbetrag=betrag
                 else:
                     soll-=betrag
-                ROW.append(( '{:10.2f}'.format(saldo) ).strip())
+                ROW.append('{:10.2f}'.format(saldo))
                 ROWS.append(ROW)
 
     NEED_COLUMNS.append('Saldo')
@@ -231,7 +235,7 @@ def updateFile(fn):
     differenz=saldo-startbetrag
     tmp+='| Startbetrag | Haben | Soll | Endbetrag | Differenz |\n'
     tmp+='| ------:| ------:| ------:| ------:| ------:|\n'
-    tmp+='| '+( '{:10.2f}'.format(startbetrag) ).strip()+ ' | '+( '{:10.2f}'.format(haben) ).strip()+' | '+( '{:10.2f}'.format(soll) ).strip()+' | '+( '{:10.2f}'.format(saldo) ).strip()+' | '+( '{:10.2f}'.format(differenz) ).strip()+' |\n\n\n'
+    tmp+='| '+fcurrency(startbetrag)+' | '+fcurrency(haben)+' | '+fcurrency(soll)+' | '+fcurrency(saldo)+' | '+fcurrency(differenz)+' |\n\n\n'
     SUMMARY.append([konto,startbetrag,haben,soll,saldo])
 
     ### markdown table headline
@@ -252,8 +256,8 @@ def updateFile(fn):
             if(NEED_COLUMNS[j]=='Beleg' and row[NEED_COLUMNS.index('BelegURL')][0:4] == 'http'):
                 tmp+='| ['+col+']('+row[NEED_COLUMNS.index('BelegURL')]+') '
             elif(NEED_COLUMNS[j]!='BelegURL'):
-                if(COLUMN_DECIMALS[j]):
-                    col='{:10.2f}'.format(float(col))
+                if(COLUMN_DECIMALS[j][0]):
+                    col=fcurrency(col,COLUMN_DECIMALS[j][1])
                 tmp+='| '+col+' '
         tmp+='|\n'
 

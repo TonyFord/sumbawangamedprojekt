@@ -1,1 +1,1 @@
-[["Beleg", "BelegURL", "Datum", "Kategorie", "Adressat", "Betrag", "Saldo"], ["1", "", "2019-01-02", "ENTW", "", "497.5", "497.50"], ["2", "", "2019-03-29", "BUCHH", "", "-1.25", "496.25"]]
+[["Beleg", "BelegURL", "Datum", "Kategorie", "Adressat", "Betrag", "Saldo"], ["1", "", "2019-01-02", "ENTW", "", "497.5", "    497.50"], ["2", "", "2019-03-29", "BUCHH", "", "-1.25", "    496.25"]]

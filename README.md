@@ -22,4 +22,4 @@
 ## Finanzen
 
 #### 2019
-##### [summary](Finanzen/2019/summary.md)
+##### [Summary](Finanzen/2019/summary.md)
