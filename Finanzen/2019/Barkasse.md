@@ -1,7 +1,12 @@
 # 2019
 
 ## Barkasse
-[CSV](Barkasse.csv) / [JSON](Barkasse.json) 
+[MD](Barkasse.md) / [CSV](Barkasse.csv) / [JSON](Barkasse.json) 
+
+| Startbetrag | Haben | Soll | Endbetrag | Differenz |
+| ------:| ------:| ------:| ------:| ------:| ------:|
+| 1172.29 | 12039.49 | 14891.49 | -2852.00 | -4024.29 |
+
 
 | Beleg | Datum | Kategorie | Adressat | Betrag | Saldo |
 | ------ | ------ | ------ | ------ | ------:| ------:|

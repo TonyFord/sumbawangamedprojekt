@@ -105,6 +105,10 @@ def updateFile(fn):
 
     ROWS=[]
     saldo=0
+    haben=0
+    soll=0
+    startbetrag=0
+
     for v in R[start_i:]:
         fl=False
         r=''
@@ -130,7 +134,15 @@ def updateFile(fn):
                         row[c]='*Datenschutz*'
                 ROW.append(row[c])
             if(ROW[NEED_COLUMNS.index('Betrag')]!=''):
-                saldo+=float(ROW[NEED_COLUMNS.index('Betrag')])
+                betrag=float(ROW[NEED_COLUMNS.index('Betrag')])
+                saldo+=float(betrag)
+                if(betrag>0):
+                    haben+=betrag
+                    if(ROW[NEED_COLUMNS.index('Kategorie')] == 'INIT' ):
+                        ### Übertragung
+                        startbetrag=betrag
+                else:
+                    soll-=betrag
                 ROW.append(( '{:10.2f}'.format(saldo) ).strip())
                 ROWS.append(ROW)
 
@@ -157,10 +169,18 @@ def updateFile(fn):
         if(f[0:2] == '20' and len(f) == 4):
             jahr=f
 
+    ### add account title
     tmp='\n## '+konto
-    tmp+='\n[CSV]('+konto+'.csv) '
+    tmp+='\n[MD]('+konto+'.md) '
+    tmp+='/ [CSV]('+konto+'.csv) '
     tmp+='/ [JSON]('+konto+'.json) '
     tmp+='\n\n'
+
+    ### haben/soll
+    differenz=saldo-startbetrag
+    tmp+='| Startbetrag | Haben | Soll | Endbetrag | Differenz |\n'
+    tmp+='| ------:| ------:| ------:| ------:| ------:| ------:|\n'
+    tmp+='| '+( '{:10.2f}'.format(startbetrag) ).strip()+ ' | '+( '{:10.2f}'.format(haben) ).strip()+' | '+( '{:10.2f}'.format(soll) ).strip()+' | '+( '{:10.2f}'.format(saldo) ).strip()+' | '+( '{:10.2f}'.format(differenz) ).strip()+' |\n\n\n'
 
     ### markdown table headline
     for v in NEED_COLUMNS:
@@ -201,5 +221,3 @@ def updateFile(fn):
 
 
 getFD('../Finanzen/')
-
-# print('ABCD'[0:3])

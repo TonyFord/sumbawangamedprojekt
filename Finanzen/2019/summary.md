@@ -1,7 +1,12 @@
 # 2019
 
 ## 1440600
-[CSV](1440600.csv) / [JSON](1440600.json)
+[MD](1440600.md) / [CSV](1440600.csv) / [JSON](1440600.json) 
+
+| Startbetrag | Haben | Soll | Endbetrag | Differenz |
+| ------:| ------:| ------:| ------:| ------:| ------:|
+| 11109.39 | 71819.21 | 65690.87 | 6128.34 | -4981.05 |
+
 
 | Beleg | Datum | Kategorie | Adressat | Betrag | Saldo |
 | ------ | ------ | ------ | ------ | ------:| ------:|
@@ -181,7 +186,7 @@
 | 174 | 2019-04-23 | UNTERB | IFISI Mbeya |   -1200.00 |    3927.25 |
 | 175 | 2019-04-23 | BUCHH | Bankspesen |     -12.00 |    3915.25 |
 | 176 | 2019-04-24 | BUCHH | Bankspesen (Token) |     -39.00 |    3876.25 |
-| 177 | 2019-04-24 | BUCHH | Gut.org AG - betterplace Umbuchung |    3367.99 |    7244.24 |
+| 177 | 2019-04-24 | BUCHH | Gut.org AG - bettterplace Umbuchung |    3367.99 |    7244.24 |
 | 178 | 2019-04-25 | REISE | Reiseland Bellingrodt |   -3000.00 |    4244.24 |
 | 179 | 2019-04-26 | SPENDE | *Datenschutz* |     100.00 |    4344.24 |
 | 180 | 2019-04-26 | TRANS | DHL Express |    -804.35 |    3539.89 |
@@ -199,7 +204,12 @@
 
 <hr>
 ## 1440601
-[CSV](1440601.csv) / [JSON](1440601.json)
+[MD](1440601.md) / [CSV](1440601.csv) / [JSON](1440601.json) 
+
+| Startbetrag | Haben | Soll | Endbetrag | Differenz |
+| ------:| ------:| ------:| ------:| ------:| ------:|
+| 0.00 | 497.50 | 1.25 | 496.25 | 496.25 |
+
 
 | Beleg | Datum | Kategorie | Adressat | Betrag | Saldo |
 | ------ | ------ | ------ | ------ | ------:| ------:|
@@ -210,7 +220,12 @@
 
 <hr>
 ## 1440602
-[CSV](1440602.csv) / [JSON](1440602.json)
+[MD](1440602.md) / [CSV](1440602.csv) / [JSON](1440602.json) 
+
+| Startbetrag | Haben | Soll | Endbetrag | Differenz |
+| ------:| ------:| ------:| ------:| ------:| ------:|
+| 1492.50 | 1492.50 | 1424.00 | 68.50 | -1424.00 |
+
 
 | Beleg | Datum | Kategorie | Adressat | Betrag | Saldo |
 | ------ | ------ | ------ | ------ | ------:| ------:|
@@ -224,7 +239,12 @@
 
 <hr>
 ## 1440603
-[CSV](1440603.csv) / [JSON](1440603.json)
+[MD](1440603.md) / [CSV](1440603.csv) / [JSON](1440603.json) 
+
+| Startbetrag | Haben | Soll | Endbetrag | Differenz |
+| ------:| ------:| ------:| ------:| ------:| ------:|
+| 0.00 | 497.50 | 1.25 | 496.25 | 496.25 |
+
 
 | Beleg | Datum | Kategorie | Adressat | Betrag | Saldo |
 | ------ | ------ | ------ | ------ | ------:| ------:|
@@ -235,7 +255,12 @@
 
 <hr>
 ## Barkasse
-[CSV](Barkasse.csv) / [JSON](Barkasse.json)
+[MD](Barkasse.md) / [CSV](Barkasse.csv) / [JSON](Barkasse.json) 
+
+| Startbetrag | Haben | Soll | Endbetrag | Differenz |
+| ------:| ------:| ------:| ------:| ------:| ------:|
+| 1172.29 | 12039.49 | 14891.49 | -2852.00 | -4024.29 |
+
 
 | Beleg | Datum | Kategorie | Adressat | Betrag | Saldo |
 | ------ | ------ | ------ | ------ | ------:| ------:|
@@ -416,7 +441,12 @@
 
 <hr>
 ## betterplace.org
-[CSV](betterplace.org.csv) / [JSON](betterplace.org.json)
+[MD](betterplace.org.md) / [CSV](betterplace.org.csv) / [JSON](betterplace.org.json) 
+
+| Startbetrag | Haben | Soll | Endbetrag | Differenz |
+| ------:| ------:| ------:| ------:| ------:| ------:|
+| 5789.83 | 14669.18 | 11769.68 | 2899.50 | -2890.33 |
+
 
 | Beleg | Datum | Kategorie | Adressat | Betrag | Saldo |
 | ------ | ------ | ------ | ------ | ------:| ------:|

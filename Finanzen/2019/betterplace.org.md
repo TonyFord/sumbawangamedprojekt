@@ -1,7 +1,12 @@
 # 2019
 
 ## betterplace.org
-[CSV](betterplace.org.csv) / [JSON](betterplace.org.json) 
+[MD](betterplace.org.md) / [CSV](betterplace.org.csv) / [JSON](betterplace.org.json) 
+
+| Startbetrag | Haben | Soll | Endbetrag | Differenz |
+| ------:| ------:| ------:| ------:| ------:| ------:|
+| 5789.83 | 14669.18 | 11769.68 | 2899.50 | -2890.33 |
+
 
 | Beleg | Datum | Kategorie | Adressat | Betrag | Saldo |
 | ------ | ------ | ------ | ------ | ------:| ------:|
