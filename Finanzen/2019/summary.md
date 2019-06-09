@@ -1,7 +1,7 @@
 # 2019
 
 ## 1440600
-[CSV](1440600.csv) / [JSON](1440600.json) 
+[CSV](1440600.csv) / [JSON](1440600.json)
 
 | Beleg | Datum | Kategorie | Adressat | Betrag | Saldo |
 | ------ | ------ | ------ | ------ | ------:| ------:|
@@ -195,14 +195,12 @@
 | 188 | 2019-04-30 | SPENDE | *Datenschutz* |     705.00 |    9128.34 |
 | 189 | 2019-05-01 | REISE | Reiseland Bellingrodt |   -3000.00 |    6128.34 |
 
-
+<hr>
 
 ## 1440601
-[CSV](1440601.csv) / [JSON](1440601.json) 
+[CSV](1440601.csv) / [JSON](1440601.json)
 
 | Beleg | Datum | Kategorie | Adressat | Betrag | Saldo |
 | ------ | ------ | ------ | ------ | ------:| ------:|
 | 1 | 2019-01-02 | ABSCHLAG |  |     497.50 |     497.50 |
 | 2 | 2019-03-29 | SONST |  |      -1.25 |     496.25 |
-
-

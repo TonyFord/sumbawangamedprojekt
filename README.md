@@ -22,4 +22,4 @@
 ## Finanzen
 
 #### 2019
-##### [1440600](Finanzen/2019/1440600.md)
+##### [summary](Finanzen/2019/summary.md)

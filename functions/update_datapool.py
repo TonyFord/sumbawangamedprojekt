@@ -188,7 +188,7 @@ def updateFile(fn):
     tmp+='\n\n'
 
     file=open(FN_JAHR,'a+')
-    file.write(tmp)
+    file.write(tmp + '\n' + '<hr>')
     file.close()
 
     tmp='# '+jahr+'\n'+tmp
