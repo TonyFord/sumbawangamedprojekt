@@ -196,3 +196,13 @@
 | 189 | 2019-05-01 | REISE | Reiseland Bellingrodt |   -3000.00 |    6128.34 |
 
 
+
+## 1440601
+[CSV](1440601.csv) / [JSON](1440601.json) 
+
+| Beleg | Datum | Kategorie | Adressat | Betrag | Saldo |
+| ------ | ------ | ------ | ------ | ------:| ------:|
+| 1 | 2019-01-02 | ABSCHLAG |  |     497.50 |     497.50 |
+| 2 | 2019-03-29 | SONST |  |      -1.25 |     496.25 |
+
+

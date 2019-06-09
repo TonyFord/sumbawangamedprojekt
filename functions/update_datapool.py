@@ -34,6 +34,8 @@ COLUMN_DECIMALS=[
     True
 ]
 
+FN_JAHR=''
+
 class bcolors:
     HEADER = '\033[95m'
     OKBLUE = '\033[94m'
@@ -45,9 +47,16 @@ class bcolors:
     UNDERLINE = '\033[4m'
 
 def getFD(ffd):
+    global FN_JAHR
     FD=glob(ffd+'*')
+    FD.sort()
     for fd in FD:
         if(os.path.isdir(fd)):
+            if(fd[0:14] == '../Finanzen/20' and len(fd) == 16 ):
+                FN_JAHR=fd+'/summary.md'
+                file=open(FN_JAHR,'w+')
+                file.write('# '+fd[-4:]+'\n')
+                file.close()
             getFD(fd+'/')
         else:
             if(fd[-4:] == '.csv'):
@@ -71,6 +80,7 @@ def detectColumns(headline):
 
 
 def updateFile(fn):
+    global FN_JAHR
 
     file=open(fn,'r')
     t=file.read()
@@ -147,8 +157,7 @@ def updateFile(fn):
         if(f[0:2] == '20' and len(f) == 4):
             jahr=f
 
-    tmp='## '+jahr
-    tmp+='\n### '+konto
+    tmp='\n## '+konto
     tmp+='\n[CSV]('+konto+'.csv) '
     tmp+='/ [JSON]('+konto+'.json) '
     tmp+='\n\n'
@@ -176,9 +185,20 @@ def updateFile(fn):
                 tmp+='| '+col+' '
         tmp+='|\n'
 
+    tmp+='\n\n'
+
+    file=open(FN_JAHR,'a+')
+    file.write(tmp)
+    file.close()
+
+    tmp='# '+jahr+'\n'+tmp
+
     file=open(fn[:-4]+'.md','w+')
     file.write(tmp)
     file.close()
+
+    NEED_COLUMNS.pop()
+
 
 getFD('../Finanzen/')
 
