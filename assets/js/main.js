@@ -31,5 +31,8 @@ $(function() {
 
   $('img').on('load', sectionHeight);
   
-  console.log( $('#logo img').attr('alt') );
+  // hide logo 
+  if( $('#logo img').attr('alt').match(/^Finanzen/g) != null ){
+    $('#logo').css('display','none);
+  }
 });
