@@ -30,4 +30,6 @@ $(function() {
   sectionHeight();
 
   $('img').on('load', sectionHeight);
+  
+  console.log( $('#logo img').attr('alt') );
 });
