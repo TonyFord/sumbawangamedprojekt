@@ -63,7 +63,9 @@ def insertSummary(fd_jahr):
 
         ## write summary to year
         tmp='# '+fd_jahr[-4:]+'\n'
-        tmp+='## Summary\n\n\n'
+        tmp+='## Summary\n\n'
+
+        tmp+='<svg class="chart"></svg>\n\n'
 
         ### haben/soll
         tmp+='| Konto | Startbetrag | Haben | Soll | Endbetrag | Differenz |\n'
@@ -257,7 +259,7 @@ def updateFile(fn):
 
     ### add account title
     tmp='\n### '+konto
-    tmp+='\n[MD]('+konto+'.md) '
+    tmp+='\n\n[MD]('+konto+'.md) '
     tmp+='/ [CSV]('+konto+'.csv) '
     tmp+='/ [JSON]('+konto+'.json) '
     tmp+='\n\n\n'
@@ -301,7 +303,7 @@ def updateFile(fn):
     tmp+='\n\n'
 
     file=open(FD_JAHR+'/summary.md','a+')
-    file.write(tmp + '\n' + '<hr>')
+    file.write(tmp + '\n<hr>\n' )
     file.close()
 
     tmp='# '+jahr+'\n'+tmp
