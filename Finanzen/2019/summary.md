@@ -1,46 +1,7 @@
 # 2019
 ## Summary
 
-
-<meta charset="utf-8">
-<style>
-
-.bar.total rect {
-  fill: steelblue;
-}
-
-.bar.positive rect {
-  fill: darkolivegreen;
-}
-.bar.negative rect {
-  fill: crimson;
-}
-
-.bar line.connector {
-  stroke: grey;
-  stroke-dasharray: 3;
-}
-
-.bar text {
-  fill: white;
-  font: 12px sans-serif;
-  text-anchor: middle;
-}
-
-.axis text {
-  font: 10px sans-serif;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-}
-
-</style>
 <svg class="chart"></svg>
-<script src="http://d3js.org/d3.v3.min.js"></script>
 <script>
 var margin = {top: 20, right: 30, bottom: 30, left: 40},
     width = 960 - margin.left - margin.right,
