@@ -99,8 +99,9 @@ def insertSummary(fd_jahr):
         t=file.read()
         file.close()
 
+
         file=open(fd_jahr+'/summary.md','w+')
-        file.write( tmp + t)
+        file.write( tmp + t + '\n<script> createWaterfall(); </script>' )
         file.close()
 
         WATERFALL_sorted = sorted(WATERFALL.items(), key=operator.itemgetter(1), reverse=True)

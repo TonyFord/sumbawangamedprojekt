@@ -2,10 +2,6 @@
 ## Summary
 
 <svg class="chart"></svg>
-<script>
-  createWaterfall();
-</script>
-
 
 | Konto | Startbetrag | Haben | Soll | Endbetrag | Differenz |
 | ------ | ------:| ------:| ------:| ------:| ------:|
@@ -19,7 +15,8 @@
 
 <hr>
 ### 1440600
-[MD](1440600.md) / [CSV](1440600.csv) / [JSON](1440600.json)
+
+[MD](1440600.md) / [CSV](1440600.csv) / [JSON](1440600.json) 
 
 
 | Startbetrag | Haben | Soll | Endbetrag | Differenz |
@@ -222,8 +219,10 @@
 
 
 <hr>
+
 ### 1440601
-[MD](1440601.md) / [CSV](1440601.csv) / [JSON](1440601.json)
+
+[MD](1440601.md) / [CSV](1440601.csv) / [JSON](1440601.json) 
 
 
 | Startbetrag | Haben | Soll | Endbetrag | Differenz |
@@ -239,8 +238,10 @@
 
 
 <hr>
+
 ### 1440602
-[MD](1440602.md) / [CSV](1440602.csv) / [JSON](1440602.json)
+
+[MD](1440602.md) / [CSV](1440602.csv) / [JSON](1440602.json) 
 
 
 | Startbetrag | Haben | Soll | Endbetrag | Differenz |
@@ -259,8 +260,10 @@
 
 
 <hr>
+
 ### 1440603
-[MD](1440603.md) / [CSV](1440603.csv) / [JSON](1440603.json)
+
+[MD](1440603.md) / [CSV](1440603.csv) / [JSON](1440603.json) 
 
 
 | Startbetrag | Haben | Soll | Endbetrag | Differenz |
@@ -276,8 +279,10 @@
 
 
 <hr>
+
 ### Barkasse
-[MD](Barkasse.md) / [CSV](Barkasse.csv) / [JSON](Barkasse.json)
+
+[MD](Barkasse.md) / [CSV](Barkasse.csv) / [JSON](Barkasse.json) 
 
 
 | Startbetrag | Haben | Soll | Endbetrag | Differenz |
@@ -463,8 +468,10 @@
 
 
 <hr>
+
 ### betterplace.org
-[MD](betterplace.org.md) / [CSV](betterplace.org.csv) / [JSON](betterplace.org.json)
+
+[MD](betterplace.org.md) / [CSV](betterplace.org.csv) / [JSON](betterplace.org.json) 
 
 
 | Startbetrag | Haben | Soll | Endbetrag | Differenz |
@@ -513,3 +520,6 @@
 
 
 <hr>
+
+
+<script> createWaterfall(); </script>

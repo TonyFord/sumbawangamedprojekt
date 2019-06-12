@@ -1,6 +1,7 @@
 # 2019
 
 ### betterplace.org
+
 [MD](betterplace.org.md) / [CSV](betterplace.org.csv) / [JSON](betterplace.org.json) 
 
 
