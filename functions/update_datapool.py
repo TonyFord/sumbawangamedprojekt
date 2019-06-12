@@ -5,6 +5,8 @@ from glob import glob
 from decimal import *
 import re
 from babel.numbers import format_currency
+import operator
+
 
 NEED_COLUMNS=[
     'Beleg',
@@ -35,8 +37,9 @@ COLUMN_DECIMALS=[
     [True,False]
 ]
 
-FN_JAHR=''
+FD_JAHR=''
 SUMMARY=[]
+WATERFALL={}
 
 class bcolors:
     HEADER = '\033[95m'
@@ -51,14 +54,15 @@ class bcolors:
 def fcurrency(betrag,plus=False):
     return format_currency(betrag, 'EUR', format=('+' if plus else '')+'#,##0.##;-#,##0.##', locale='de')
 
-def insertSummary(fn_jahr):
+def insertSummary(fd_jahr):
     global SUMMARY
+    global WATERFALL
 
-    print(fn_jahr)
-    if( fn_jahr != '' ):
+    print(fd_jahr)
+    if( fd_jahr != '' ):
 
         ## write summary to year
-        tmp='# '+fn_jahr[-15:-11]+'\n'
+        tmp='# '+fd_jahr[-4:]+'\n'
         tmp+='## Summary\n\n\n'
 
         ### haben/soll
@@ -89,35 +93,55 @@ def insertSummary(fn_jahr):
         tmp+='\n<hr>'
 
 
-        file=open(fn_jahr,'r')
+        file=open(fd_jahr+'/summary.md','r')
         t=file.read()
         file.close()
 
-        file=open(fn_jahr,'w+')
+        file=open(fd_jahr+'/summary.md','w+')
         file.write( tmp + t)
+        file.close()
+
+        WATERFALL_sorted = sorted(WATERFALL.items(), key=operator.itemgetter(1), reverse=True)
+        wi='name,value\n'
+        wf=''
+        for v in WATERFALL_sorted:
+            if(v[0] == 'INIT'):
+                wi+='START,'+('{:10.2f}'.format(v[1]))+'\n'
+            else:
+                wf+=v[0]+','+('{:10.2f}'.format(v[1]))+'\n'
+
+        file=open(fd_jahr+'/waterfall.csv','w+')
+        file.write( wi + wf )
         file.close()
 
 
 def getFD(ffd):
-    global FN_JAHR
+    global FD_JAHR
     global SUMMARY
+    global WATERFALL
     FD=glob(ffd+'*')
     FD.sort()
     for fd in FD:
         if(os.path.isdir(fd)):
             if(fd[0:14] == '../Finanzen/20' and len(fd) == 16 ):
-                insertSummary(FN_JAHR)
-                FN_JAHR=fd+'/summary.md'
-                file=open(FN_JAHR,'w+')
+                insertSummary(FD_JAHR)
+                FD_JAHR=fd
+
+                file=open(FD_JAHR+'/summary.md','w+')
                 file.write('')
                 file.close()
+
                 SUMMARY=[]
+                WATERFALL={}
             getFD(fd+'/')
         else:
             if(fd[-4:] == '.csv'):
                 if( os.path.isfile(fd[:-4]+'.md') ):
                     ### file already exists skip
                     print(fd + ' - already converted -> skip')
+                elif( fd[-13:] == 'waterfall.csv' ):
+                    ### ignore waterfall.csv
+                    fd=fd
                 else:
                     print(fd + ' convert..')
                     updateFile(fd)
@@ -135,7 +159,7 @@ def detectColumns(headline):
 
 
 def updateFile(fn):
-    global FN_JAHR
+    global FD_JAHR
     global SUMMARY
 
     file=open(fn,'r')
@@ -180,6 +204,11 @@ def updateFile(fn):
             for i,c in enumerate(COLUMNS):
 
                 if(NEED_COLUMNS[i]=='Kategorie'):
+
+                    kategorie=row[c]
+                    if( not kategorie in WATERFALL ):
+                        WATERFALL[kategorie]=0
+
                     if( row[c] == 'SPENDE' or row[c] == 'VISA' ):
                         istSpende=True
                     else:
@@ -191,6 +220,7 @@ def updateFile(fn):
                 ROW.append(row[c])
             if(ROW[NEED_COLUMNS.index('Betrag')]!=''):
                 betrag=float(ROW[NEED_COLUMNS.index('Betrag')])
+                WATERFALL[kategorie]+=betrag
                 saldo+=float(betrag)
                 if(betrag>0):
                     haben+=betrag
@@ -270,7 +300,7 @@ def updateFile(fn):
 
     tmp+='\n\n'
 
-    file=open(FN_JAHR,'a+')
+    file=open(FD_JAHR+'/summary.md','a+')
     file.write(tmp + '\n' + '<hr>')
     file.close()
 
@@ -284,4 +314,4 @@ def updateFile(fn):
 
 
 getFD('../Finanzen/')
-insertSummary(FN_JAHR)
+insertSummary(FD_JAHR)
