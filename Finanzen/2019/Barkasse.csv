@@ -4,7 +4,7 @@ K-2,,2019-03-01,SPENDE,*Datenschutz*,300,   1472.29
 K-3,,2019-03-19,SPENDE,*Datenschutz*,1000,   2472.29
 K-4,,2019-03-19,SPENDE,*Datenschutz*,2000,   4472.29
 K-5,,2019-03-21,REISE,fee for bags Air Tanzania,-743.034055727554,   3729.26
-K-6,,2019-03-21,MAT,Gauze. Bandages,-200.05,   3529.21
+K-6,,2019-03-21,MAT,Gauze / Bandages,-200.05,   3529.21
 K-7,,2019-03-22,MAT,Ketamine,-339.17,   3190.04
 K-8,,2019-03-22,REISE,storage for bags,-180,   3010.04
 K-9,,2019-03-22,VISA,*Datenschutz*,-50,   2960.04
@@ -31,8 +31,8 @@ K-29,,2019-03-23,PATIENT,Food for patients,-19.3498452012384,   1742.39
 K-30,,2019-03-23,PATIENT,Food for patients,-19.3498452012384,   1723.04
 K-31,,2019-03-24,PATIENT,Food for patients,-19.3498452012384,   1703.69
 K-32,,2019-03-24,PATIENT,Food for patients,-19.3498452012384,   1684.34
-K-33,,2019-03-25,MAT,surgical gloves. bandages. povidone,-224.458204334365,   1459.88
-K-34,,2019-03-25,MAT,Vicryl 3/0. hand gloves,-113.777089783282,   1346.11
+K-33,,2019-03-25,MAT,surgical gloves / bandages / povidone,-224.458204334365,   1459.88
+K-34,,2019-03-25,MAT,Vicryl 3/0 - hand gloves,-113.777089783282,   1346.11
 K-35,,2019-03-25,PATIENT,Food & Beverages for OT,-448.161764705882,    897.94
 K-36,,2019-03-25,PATIENT,Food for patients,-19.3498452012384,    878.59
 K-37,,2019-03-25,PATIENT,Food for patients,-19.3498452012384,    859.24
@@ -127,7 +127,7 @@ K-125,,2019-04-10,PATIENT,food & Beverages for OT,-865.905572755418,  -1901.55
 K-126,,2019-04-10,PATIENT,Food for patients,-19.3498452012384,  -1920.90
 K-127,,2019-04-10,PATIENT,Food for patients,-19.3498452012384,  -1940.25
 K-128,,2019-04-11,PATIENT,Water for patients,-42.5696594427245,  -1982.82
-K-129,,2019-04-11,MAT,amoxicillin. pop cast,-274.767801857585,  -2257.59
+K-129,,2019-04-11,MAT,Amoxicillin / pop cast,-274.767801857585,  -2257.59
 K-130,,2019-04-11,PATIENT,Food for patients,-19.3498452012384,  -2276.94
 K-131,,2019-04-11,PATIENT,Food for patients,-19.3498452012384,  -2296.29
 K-132,,2019-04-12,PATIENT,Food for patients,-19.3498452012384,  -2315.64
@@ -171,3 +171,53 @@ K-169,,2019-04-24,ABSCHLAG,Compensation plan Dr. Jipemba,-116.09907120743,  -341
 K-170,,2019-04-21,PATIENT,Übernahme Kosten für Amputation und Unterkunft und Verpflegung im Mbalisi Hospital für Martin Edward,-250,  -3669.20
 K-171,,2019-04-20,SPENDE,*Datenschutz*,148,  -3521.20
 K-172,,2019-04-22,SPENDE,*Datenschutz*,669.2,  -2852.00
+K-173,,2019-04-22,BUCHH,Übergewicht / Visa-Gebühren / Taxi Mbeya- Sumbawanga,600,  -2252.00
+K-174,,2019-04-22,SONST,Medikamente Dr. Jipemba,-600,  -2852.00
+K-175,,2019-05-02,SONST,Umbuchung von Bank für Sozialwirtschaft Auslagenerstattung,2852,     -0.00
+K-176,,2019-06-01,SONST,Parkhausgebühr Willy Heckelei für Vortrag bei Kindenchirurgen über Sumbawanga in Trier,-90,    -90.00
+K-177,,2019-06-01,SONST,Tagungsgebühr Willy Heckelei für Vortrag bei Kindenchirurgen über Sumbawanga in Trier,-10.2,   -100.20
+K-178,,2019-06-01,SPENDE,*Datenschutz*,-72.44,   -172.64
+K-179,,2019-06-01,BUCHH,Benzinkosten Willy Heckelei für Vortrag bei Kindenchirurgen über Sumbawanga in Trier,-42.04,   -214.68
+K-180,,2019-06-01,SPENDE,*Datenschutz*,210,     -4.68
+K-181,,2019-06-01,SPENDE,*Datenschutz*,4.68,     -0.00
+K-182,,2019-08-14,SPENDE,*Datenschutz*,500,    500.00
+K-183,,2019-08-15,REISE,Ticket DB Dresden - Frankfurt,-58,    442.00
+K-184,,2019-08-16,VISA,*Datenschutz*,-50,    392.00
+K-185,,2019-08-16,UNTERB,Übernachtung Strotkötter Kurasini Dar-es-Salaam,-20,    372.00
+K-186,,2019-08-23,MAT,2 Höllensteinstifte,-6.33,    365.67
+K-187,,2019-08-27,PATIENT,Röntgen Pat. Chaiass,-7.92,    357.75
+K-188,,2019-08-27,PATIENT,Röntgen Pat. Lauerk,-7.92,    349.83
+K-189,,2019-08-28,PATIENT,Food & Beverages ,-150,    199.83
+K-190,,2019-08-28,VISA,*Datenschutz*,-150,     49.83
+K-191,,2019-08-28,ENTW,Dr. Jipemba compensation for training,-100,    -50.17
+K-192,,2019-08-28,MAT,Verbandsstoffe / Handschuhe ,-389.08,   -439.25
+K-193,,2019-08-30,REISE,Ticket DB Frankfurt - Dresden,-60.75,   -500.00
+K-194,,2019-08-31,BUCHH,Ausgleich Barkasse,500,     -0.00
+K-195,,2019-09-01,PATIENT,Plattenosteosynthese im Mbalisi Hospital für mama Gilles,-193.423597678917,   -193.42
+K-196,,2019-09-06,BUCHH,Bankspesen,-11.605415860735,   -205.03
+K-197,,2019-09-06,REISE,Francis Ndaga - Permits Tosamaganga - Fahrt nach Dodoma,-193.423597678917,   -398.45
+K-198,,2019-09-06,BUCHH,Bankspesen,-11.605415860735,   -410.06
+K-199,,2019-09-06,MAT,Dr. Jipemba - Medical Devices und Drugs,-249.516441005803,   -659.57
+K-200,,2019-09-09,BUCHH,Umbuchung von Bank für Sozialwirtschaft ,500,   -159.57
+K-201,,2019-09-09,SONST,Telefonkosten,-100,   -259.57
+K-202,,2019-09-09,TRANS,Portokosten August ,-100,   -359.57
+K-203,,2019-09-09,VISA,*Datenschutz*,-100,   -459.57
+K-204,,2019-09-12,BUCHH,Umbuchung von 144601 für Barkasse,1500,   1040.43
+K-205,,2019-09-16,TRANS,Übergewicht,-21.6634429400387,   1018.76
+K-206,,2019-09-17,MAT,Povidone / Bandagen / Desinfektionslösung,-195.357833655706,    823.40
+K-207,,2019-09-17,SONST,Reifen Defekt,-38.6847195357834,    784.72
+K-208,,2019-09-17,MAT,Handdesinfektionsmittel,-19.3423597678917,    765.38
+K-209,,2019-09-19,MAT,Medikamente Vitus,-10.2514506769826,    755.13
+K-210,,2019-09-19,MAT,Medikamente Justina,-10.2514506769826,    744.87
+K-211,,2019-09-20,PATIENT,Physiotherapie mit Hausbesuch bei Querschnittsgelähmten Patienten,-77.3694390715667,    667.50
+K-212,,2019-09-20,PATIENT,Verpflegung für 2 Verbrennungskinder,-77.3694390715667,    590.14
+K-213,,2019-09-21,REISE,Besuch der dispensary in Mwimva,-38.6847195357834,    551.45
+K-214,,2019-09-23,MAT,Bandagen,-30.7543520309478,    520.70
+K-215,,2019-09-25,PATIENT,Medikamente für 5 Verbrennungskinder,-96.7117988394584,    423.98
+K-216,,2019-09-25,UNTERB,Accommodation Mbeya incl. Fahrer,-48.742746615087,    375.24
+K-217,,2019-09-25,UNTERB,Accommodation Sumbawanga,-116.05415860735,    259.19
+K-218,,2019-09-25,REISE,Francis Ndaga - Permits Team Wetter - Fahrt nach Dodoma,-193.423597678917,     65.76
+K-219,,2019-09-25,REISE,Francis Ndaga - Permits camp22 - Fahrt nach Dodoma,-193.423597678917,   -127.66
+K-220,,2019-09-26,SPENDE,*Datenschutz*,450,    322.34
+K-221,,2019-09-30,SONST,Internet Sumbawanga,-48.3558994197292,    273.98
+K-222,,2019-09-30,SONST,Telefonkosten,-185.68665377176,     88.30

@@ -1,6 +1,29 @@
 Beleg,BelegURL,Datum,Kategorie,Adressat,Betrag,Saldo
 1,,2019-01-02,INIT,Übertrag aus 2018,1492.5,   1492.50
-2,,2019-04-23,ENTW,Training Anästhesie-Ausbildung Alphonce Katunka,-700,    792.50
-3,,2019-04-23,BUCHH,Bankspesen,-12,    780.50
-4,,2019-04-28,ENTW,Training Anästhesie-Ausbildung Godifrey Sungura,-700,     80.50
-5,,2019-04-28,BUCHH,Bankspesen,-12,     68.50
+2,,2019-03-29,BUCHH,Bankspesen,-1.25,   1491.25
+3,,2019-04-23,ENTW,Training Anästhesie-Ausbildung Alphonce Katunka,-700,    791.25
+4,,2019-04-23,BUCHH,Bankspesen,-12,    779.25
+5,,2019-04-29,ENTW,Training Anästhesie-Ausbildung Godifrey Sungura,-700,     79.25
+6,,2019-04-29,BUCHH,Bankspesen,-12,     67.25
+7,,2019-06-04,SPENDE,*Datenschutz*,200,    267.25
+8,,2019-06-20,BUCHH,Umbuchung für Auslagenersatz Übersetzungen,-170,     97.25
+9,,2019-07-01,SPENDE,*Datenschutz*,500,    597.25
+10,,2019-07-02,SPENDE,*Datenschutz*,1000,   1597.25
+11,,2019-07-02,SPENDE,*Datenschutz*,500,   2097.25
+12,,2019-07-03,SPENDE,*Datenschutz*,750,   2847.25
+13,,2019-07-05,ABSCHLAG,Abschlag auf 50 % Big Shoe (von 5.000 €),3000,   5847.25
+14,,2019-07-09,REISE,Reiseland Bellingrodt,-2625,   3222.25
+15,,2019-07-09,TRANS,DHL Express,-32.7,   3189.55
+16,,2019-07-15,ABSCHLAG,Abschlag auf 50 % BigShoe (von 5.000 €),2000,   5189.55
+17,,2019-07-15,SPENDE,*Datenschutz*,2366,   7555.55
+18,,2019-07-16,SPENDE,*Datenschutz*,200,   7755.55
+19,,2019-07-22,VISA,*Datenschutz*,-50,   7705.55
+20,,2019-07-24,TRANS,DHL-Express Transport Pakete ,-553.3,   7152.25
+21,,2019-07-26,BUCHH,Umbuchung aus betterplace Sabine Wetter,200,   7352.25
+22,,2019-08-13,BUCHH,Umbuchung Bundesverband der niedergelassenen Kinderchirurgen,1000,   8352.25
+23,,2019-08-30,ABSCHLAG,Abschlag für Team Wetter für Transport Mbeya- Sumbawanga / Unterkunft und Verpflegung,-1500,   6852.25
+24,,2019-09-08,BUCHH,Barkasse Team Wetter,-2000,   4852.25
+25,,2019-09-09,BUCHH,Barkasse Team Wetter,-2000,   2852.25
+26,,2019-09-12,SPENDE,*Datenschutz*,50,   2902.25
+27,,2019-09-13,BUCHH,Umbuchung aus betterplace Sabine Wetter,460.45,   3362.70
+28,,2019-09-26,SPENDE,*Datenschutz*,30,   3392.70

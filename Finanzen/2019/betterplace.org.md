@@ -7,7 +7,7 @@
 
 | Startbetrag | Haben | Soll | Endbetrag | Differenz |
 | ------:| ------:| ------:| ------:| ------:|
-| 5.789,83 | 14.669,18 | 11.769,68 | 2.899,50 | -2.890,33 |
+| 5.789,83 | 19.296,18 | 19.198,68 | 97,50 | -5.692,33 |
 
 
 | Beleg | Datum | Kategorie | Adressat | Betrag | Saldo |
@@ -23,7 +23,7 @@
 | B-9 | 2019-02-19 | SPENDE | *Datenschutz* | <font color="green">+150,00</font> | 8.524,83 |
 | B-10 | 2019-02-25 | SPENDE | *Datenschutz* | <font color="green">+100,00</font> | 8.624,83 |
 | B-11 | 2019-03-05 | SPENDE | *Datenschutz* | <font color="green">+500,00</font> | 9.124,83 |
-| B-12 | 2019-03-05 | BUCHH | Überweisung an Bank für Sozialwirtschaft ( 1440600 ) | <font color="red">-8.215,14</font> | 909,69 |
+| B-12 | 2019-03-05 | BUCHH | Überweisung an Bank für Sozialwirtschaft | <font color="red">-8.215,14</font> | 909,69 |
 | B-13 | 2019-03-10 | SPENDE | *Datenschutz* | <font color="green">+300,00</font> | 1.209,69 |
 | B-14 | 2019-03-11 | SPENDE | *Datenschutz* | <font color="green">+350,00</font> | 1.559,69 |
 | B-15 | 2019-03-12 | SPENDE | *Datenschutz* | <font color="green">+50,00</font> | 1.609,69 |
@@ -43,9 +43,32 @@
 | B-29 | 2019-04-20 | SPENDE | *Datenschutz* | <font color="green">+50,00</font> | 5.754,04 |
 | B-30 | 2019-04-20 | SPENDE | *Datenschutz* | <font color="green">+50,00</font> | 5.804,04 |
 | B-31 | 2019-04-22 | SPENDE | *Datenschutz* | <font color="green">+100,00</font> | 5.904,04 |
-| B-32 | 2019-04-24 | BUCHH | Überweisung an Bank für Sozialwirtschaft ( 1440600 ) | <font color="red">-3.367,99</font> | 2.536,05 |
+| B-32 | 2019-04-24 | BUCHH | Überweisung an Bank für Sozialwirtschaft | <font color="red">-3.367,99</font> | 2.536,05 |
 | B-33 | 2019-04-25 | SPENDE | *Datenschutz* | <font color="green">+500,00</font> | 3.036,05 |
-| B-34 | 2019-04-27 | SPENDE | *Datenschutz* | <font color="green">+50,00</font> | 3.086,05 |
-| B-35 | 2019-04-27 | BUCHH | Transaktionskosten | <font color="red">-186,55</font> | 2.899,50 |
+| B-34 | 2019-04-27 | SPENDE | *Datenschutz* | <font color="green">+30,00</font> | 3.066,05 |
+| B-35 | 2019-04-27 | BUCHH | Transaktionskosten | +0,00 | 3.066,05 |
+| B-36 | 2019-05-02 | SPENDE | *Datenschutz* | <font color="green">+100,00</font> | 3.166,05 |
+| B-37 | 2019-05-09 | BUCHH | Übertrag Bank für Sozialwirtschaft | <font color="red">-2.232,75</font> | 933,30 |
+| B-38 | 2019-05-13 | SPENDE | *Datenschutz* | <font color="green">+20,00</font> | 953,30 |
+| B-39 | 2019-05-13 | SPENDE | *Datenschutz* | <font color="green">+300,00</font> | 1.253,30 |
+| B-40 | 2019-05-13 | SPENDE | *Datenschutz* | <font color="green">+500,00</font> | 1.753,30 |
+| B-41 | 2019-06-05 | SPENDE | *Datenschutz* | <font color="green">+777,00</font> | 2.530,30 |
+| B-42 | 2019-06-05 | SPENDE | *Datenschutz* | <font color="green">+30,00</font> | 2.560,30 |
+| B-43 | 2019-06-19 | SPENDE | *Datenschutz* | <font color="green">+500,00</font> | 3.060,30 |
+| B-44 | 2019-06-26 | SPENDE | *Datenschutz* | <font color="green">+25,00</font> | 3.085,30 |
+| B-45 | 2019-06-27 | SPENDE | *Datenschutz* | <font color="green">+100,00</font> | 3.185,30 |
+| B-46 | 2019-07-01 | SPENDE | *Datenschutz* | <font color="green">+1.000,00</font> | 4.185,30 |
+| B-47 | 2019-07-03 | SPENDE | *Datenschutz* | <font color="green">+500,00</font> | 4.685,30 |
+| B-48 | 2019-07-05 | SPENDE | *Datenschutz* | <font color="green">+100,00</font> | 4.785,30 |
+| B-49 | 2019-07-06 | SPENDE | *Datenschutz* | <font color="green">+150,00</font> | 4.935,30 |
+| B-50 | 2019-07-14 | SPENDE | *Datenschutz* | <font color="green">+200,00</font> | 5.135,30 |
+| B-51 | 2019-07-24 | BUCHH | Übertrag Bank für Sozialwirtschaft | <font color="red">-3.784,95</font> | 1.350,35 |
+| B-52 | 2019-07-30 | SPENDE | *Datenschutz* | <font color="green">+80,00</font> | 1.430,35 |
+| B-53 | 2019-07-31 | BUCHH | Transaktionskosten Betterplace | <font color="red">-455,35</font> | 975,00 |
+| B-54 | 2019-08-19 | SPENDE | *Datenschutz* | <font color="green">+165,00</font> | 1.140,00 |
+| B-55 | 2019-09-11 | BUCHH | Umbuchung auf 144600 | <font color="red">-1.135,87</font> | 4,13 |
+| B-56 | 2019-09-15 | SPENDE | *Datenschutz* | <font color="green">+30,00</font> | 34,13 |
+| B-57 | 2019-09-15 | SPENDE | *Datenschutz* | <font color="green">+70,00</font> | 104,13 |
+| B-58 | 2019-09-30 | BUCHH | Transaktionskosten Betterplace | <font color="red">-6,63</font> | 97,50 |
 
 

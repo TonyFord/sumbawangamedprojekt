@@ -1,3 +1,105 @@
 Beleg,BelegURL,Datum,Kategorie,Adressat,Betrag,Saldo
 1,,2019-01-02,ENTW,,497.5,    497.50
 2,,2019-03-29,BUCHH,,-1.25,    496.25
+3,,2019-06-05,ENTW,Surgical online Training Dr. Jipemba,-212,    284.25
+4,,2019-06-05,SPENDE,*Datenschutz*,30,    314.25
+5,,2019-06-05,SPENDE,*Datenschutz*,200,    514.25
+6,,2019-06-12,SPENDE,*Datenschutz*,100,    614.25
+7,,2019-06-14,SPENDE,*Datenschutz*,40,    654.25
+8,,2019-06-19,SPENDE,*Datenschutz*,2000,   2654.25
+9,,2019-06-20,SPENDE,*Datenschutz*,55,   2709.25
+10,,2019-06-26,SPENDE,*Datenschutz*,300,   3009.25
+11,,2019-06-26,BUCHH,Ausleihe für Hauptkonto,-2000,   1009.25
+12,,2019-06-27,UNTERB,Umbuchung Mietanteil Lagerwohnung,50,   1059.25
+13,,2019-06-28,BUCHH,Rückbuchung Ausleihe,2000,   3059.25
+14,,2019-07-01,REISE,Reiseland Bellingrodt: camp 23,-1203,   1856.25
+15,,2019-07-01,REISE,Reiseland Bellingrodt: camp 23,-1797,     59.25
+16,,2019-07-01,SPENDE,*Datenschutz*,2000,   2059.25
+17,,2019-07-02,SPENDE,*Datenschutz*,1500,   3559.25
+18,,2019-07-02,SPENDE,*Datenschutz*,2000,   5559.25
+19,,2019-07-03,BUCHH,Umbuchung Anteil Spende Gampe für Team Wetter,-750,   4809.25
+20,,2019-07-04,BUCHH,Umbuchung Anteil Bigshoe ,3000,   7809.25
+21,,2019-07-05,SPENDE,*Datenschutz*,30,   7839.25
+22,,2019-07-05,SPENDE,*Datenschutz*,200,   8039.25
+23,,2019-07-08,SPENDE,*Datenschutz*,1600,   9639.25
+24,,2019-07-09,ABSCHLAG,Dr. Jipemba,-262,   9377.25
+25,,2019-07-10,REISE,Reiseland Bellingrodt camp23,-2000,   7377.25
+26,,2019-07-11,REISE,Reiseland Bellingrodt camp23,-3009.05,   4368.20
+27,,2019-07-11,SPENDE,*Datenschutz*,50,   4418.20
+28,,2019-07-12,SPENDE,*Datenschutz*,1200,   5618.20
+29,,2019-07-13,SPENDE,*Datenschutz*,2000,   7618.20
+30,,2019-07-16,SPENDE,*Datenschutz*,20,   7638.20
+31,,2019-07-16,SPENDE,*Datenschutz*,1000,   8638.20
+32,,2019-07-22,BUCHH,Umbuchung Mietanteil Lagerwohnung von 1440600,50,   8688.20
+33,,2019-07-22,BUCHH,Umbuchung auslagen Genehmigung von 1440602,50,   8738.20
+34,,2019-07-24,SONST,,-55.56,   8682.64
+35,,2019-07-26,BUCHH,Umbuchung aus Betterplace Dr. König von 1440600,150,   8832.64
+36,,2019-07-26,BUCHH,Umbuchung aus Betterplace Veronic Hein von 1440600,100,   8932.64
+37,,2019-07-26,BUCHH,Umbuchung aus Betterplace Patrizia Müller,500,   9432.64
+38,,2019-07-26,BUCHH,Umbuchung aus Betterplace Zohra Schardt,500,   9932.64
+39,,2019-08-05,SPENDE,*Datenschutz*,200,  10132.64
+40,,2019-08-06,SPENDE,*Datenschutz*,150,  10282.64
+41,,2019-08-06,UNTERB,Auslagenerstattung Camp23 Air Transit Lodge ,-440,   9842.64
+42,,2019-08-06,SPENDE,*Datenschutz*,30,   9872.64
+43,,2019-08-07,MAT,Dr. Jipemba - Medikamente Emergency,-62,   9810.64
+44,,2019-08-08,REISE,Reiseland Bellingrodt camp23,-3000,   6810.64
+45,,2019-08-08,SPENDE,*Datenschutz*,200,   7010.64
+46,,2019-08-09,REISE,Reiseland Bellingrodt camp23,-3000,   4010.64
+47,,2019-08-13,BUCHH,Umbuchung von 1440600 Kinderchirurgen,1000,   5010.64
+48,,2019-08-15,SPENDE,*Datenschutz*,500,   5510.64
+49,,2019-08-19,SPENDE,*Datenschutz*,100,   5610.64
+50,,2019-08-19,SPENDE,*Datenschutz*,2000,   7610.64
+51,,2019-08-19,SPENDE,*Datenschutz*,100,   7710.64
+52,,2019-08-20,SPENDE,*Datenschutz*,190,   7900.64
+53,,2019-08-20,SPENDE,*Datenschutz*,100,   8000.64
+54,,2019-08-21,ENTW,Dr. Jipemba - Auslagenersatz für Anästhesie-Lehrgang Neugeborenen in Mbeya,-202,   7798.64
+55,,2019-08-22,SPENDE,*Datenschutz*,150,   7948.64
+56,,2019-08-22,SPENDE,*Datenschutz*,50,   7998.64
+57,,2019-08-22,SPENDE,*Datenschutz*,50,   8048.64
+58,,2019-08-22,SPENDE,*Datenschutz*,60,   8108.64
+59,,2019-08-23,SPENDE,*Datenschutz*,100,   8208.64
+60,,2019-08-23,SPENDE,*Datenschutz*,40,   8248.64
+61,,2019-08-23,REISE,Reiseland Bellingrodt camp23,-2000,   6248.64
+62,,2019-08-26,SPENDE,*Datenschutz*,60,   6308.64
+63,,2019-08-26,SPENDE,*Datenschutz*,50,   6358.64
+64,,2019-08-26,SPENDE,*Datenschutz*,50,   6408.64
+65,,2019-08-26,SPENDE,*Datenschutz*,50,   6458.64
+66,,2019-08-26,SPENDE,*Datenschutz*,50,   6508.64
+67,,2019-08-26,SPENDE,*Datenschutz*,25,   6533.64
+68,,2019-08-26,SPENDE,*Datenschutz*,50,   6583.64
+69,,2019-08-26,SPENDE,*Datenschutz*,100,   6683.64
+70,,2019-08-27,TRANS,DHL Express,-31.56,   6652.08
+71,,2019-08-27,BUCHH,Barkasse Sumbawanga,-500,   6152.08
+72,,2019-08-27,TRANS,DHL Express,-83.06,   6069.02
+73,,2019-08-27,TRANS,DHL Express,-83.06,   5985.96
+74,,2019-08-27,TRANS,DHL Express,-242.61,   5743.35
+75,,2019-08-27,TRANS,DHL Express,-55.56,   5687.79
+76,,2019-08-27,SPENDE,*Datenschutz*,25,   5712.79
+77,,2019-08-27,SPENDE,*Datenschutz*,50,   5762.79
+78,,2019-08-29,TRANS,Amozon Reisetaschen für Materialtransport,-44.98,   5717.81
+79,,2019-08-29,TRANS,Amozon Reisetaschen für Materialtransport,-170.91,   5546.90
+80,,2019-08-30,SPENDE,*Datenschutz*,50,   5596.90
+81,,2019-08-30,ANSCH,Dr. Jipemba für Laufbarren Physiotherapie,-500,   5096.90
+82,,2019-08-30,BUCHH,Bankspesen,-12,   5084.90
+83,,2019-09-03,REISE,Reiseland Bellingrodt camp23,-1375.15,   3709.75
+84,,2019-09-04,SPENDE,*Datenschutz*,200,   3909.75
+85,,2019-09-05,SPENDE,*Datenschutz*,30,   3939.75
+86,,2019-09-05,SPENDE,*Datenschutz*,600,   4539.75
+87,,2019-09-05,SPENDE,*Datenschutz*,200,   4739.75
+88,,2019-09-06,ANSCH,Dr Jipemba - Laufbarren,-250,   4489.75
+89,,2019-09-06,BUCHH,Bankspesen,-12,   4477.75
+90,,2019-09-06,VISA,*Datenschutz*,-150,   4327.75
+91,,2019-09-06,BUCHH,Bankspesen,-12,   4315.75
+92,,2019-09-06,SPENDE,*Datenschutz*,1500,   5815.75
+93,,2019-09-09,SONST,Dr. Beate Müller - Auslagenersatz,35,   5850.75
+94,,2019-09-09,REISE,Reiseland Bellingrodt camp23,-850,   5000.75
+95,,2019-09-12,ANSCH,Trichterfräse für Prothesen Abschlag,-446.31,   4554.44
+96,,2019-09-12,BUCHH,Umbuchung aus betterplace Dr. Helmut Annen,50,   4604.44
+97,,2019-09-12,BUCHH,Umbuchung aus betterplace Anteil Team Strotkötter,460.5,   5064.94
+98,,2019-09-12,BUCHH,Umbuchung für Barkasse,-1500,   3564.94
+99,,2019-09-16,SPENDE,*Datenschutz*,200,   3764.94
+100,,2019-09-19,SPENDE,*Datenschutz*,60,   3824.94
+101,,2019-09-20,SPENDE,*Datenschutz*,100,   3924.94
+102,,2019-09-23,BUCHH,Umbuchung Sektion Duisburg,5000,   8924.94
+103,,2019-09-23,ENTW,Dr. Ulrike Seeliger-Ollmann - Weiterbildung Alphonce Katunka - Neugeborenenanästhesie,100,   9024.94
+104,,2019-09-27,MAT,stamos + braun prothesenwerk - Abschlag,-2000,   7024.94

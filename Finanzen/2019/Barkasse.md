@@ -7,7 +7,7 @@
 
 | Startbetrag | Haben | Soll | Endbetrag | Differenz |
 | ------:| ------:| ------:| ------:| ------:|
-| 1.172,29 | 12.039,49 | 14.891,49 | -2.852,00 | -4.024,29 |
+| 1.172,29 | 19.156,17 | 19.067,87 | 88,30 | -1.083,99 |
 
 
 | Beleg | Datum | Kategorie | Adressat | Betrag | Saldo |
@@ -17,7 +17,7 @@
 | K-3 | 2019-03-19 | SPENDE | *Datenschutz* | <font color="green">+1.000,00</font> | 2.472,29 |
 | K-4 | 2019-03-19 | SPENDE | *Datenschutz* | <font color="green">+2.000,00</font> | 4.472,29 |
 | K-5 | 2019-03-21 | REISE | fee for bags Air Tanzania | <font color="red">-743,03</font> | 3.729,26 |
-| K-6 | 2019-03-21 | MAT | Gauze. Bandages | <font color="red">-200,05</font> | 3.529,21 |
+| K-6 | 2019-03-21 | MAT | Gauze / Bandages | <font color="red">-200,05</font> | 3.529,21 |
 | K-7 | 2019-03-22 | MAT | Ketamine | <font color="red">-339,17</font> | 3.190,04 |
 | K-8 | 2019-03-22 | REISE | storage for bags | <font color="red">-180,00</font> | 3.010,04 |
 | K-9 | 2019-03-22 | VISA | *Datenschutz* | <font color="red">-50,00</font> | 2.960,04 |
@@ -44,8 +44,8 @@
 | K-30 | 2019-03-23 | PATIENT | Food for patients | <font color="red">-19,35</font> | 1.723,04 |
 | K-31 | 2019-03-24 | PATIENT | Food for patients | <font color="red">-19,35</font> | 1.703,69 |
 | K-32 | 2019-03-24 | PATIENT | Food for patients | <font color="red">-19,35</font> | 1.684,34 |
-| K-33 | 2019-03-25 | MAT | surgical gloves. bandages. povidone | <font color="red">-224,46</font> | 1.459,88 |
-| K-34 | 2019-03-25 | MAT | Vicryl 3/0. hand gloves | <font color="red">-113,78</font> | 1.346,11 |
+| K-33 | 2019-03-25 | MAT | surgical gloves / bandages / povidone | <font color="red">-224,46</font> | 1.459,88 |
+| K-34 | 2019-03-25 | MAT | Vicryl 3/0 - hand gloves | <font color="red">-113,78</font> | 1.346,11 |
 | K-35 | 2019-03-25 | PATIENT | Food & Beverages for OT | <font color="red">-448,16</font> | 897,94 |
 | K-36 | 2019-03-25 | PATIENT | Food for patients | <font color="red">-19,35</font> | 878,59 |
 | K-37 | 2019-03-25 | PATIENT | Food for patients | <font color="red">-19,35</font> | 859,24 |
@@ -140,7 +140,7 @@
 | K-126 | 2019-04-10 | PATIENT | Food for patients | <font color="red">-19,35</font> | -1.920,90 |
 | K-127 | 2019-04-10 | PATIENT | Food for patients | <font color="red">-19,35</font> | -1.940,25 |
 | K-128 | 2019-04-11 | PATIENT | Water for patients | <font color="red">-42,57</font> | -1.982,82 |
-| K-129 | 2019-04-11 | MAT | amoxicillin. pop cast | <font color="red">-274,77</font> | -2.257,59 |
+| K-129 | 2019-04-11 | MAT | Amoxicillin / pop cast | <font color="red">-274,77</font> | -2.257,59 |
 | K-130 | 2019-04-11 | PATIENT | Food for patients | <font color="red">-19,35</font> | -2.276,94 |
 | K-131 | 2019-04-11 | PATIENT | Food for patients | <font color="red">-19,35</font> | -2.296,29 |
 | K-132 | 2019-04-12 | PATIENT | Food for patients | <font color="red">-19,35</font> | -2.315,64 |
@@ -184,5 +184,55 @@
 | K-170 | 2019-04-21 | PATIENT | Übernahme Kosten für Amputation und Unterkunft und Verpflegung im Mbalisi Hospital für Martin Edward | <font color="red">-250,00</font> | -3.669,20 |
 | K-171 | 2019-04-20 | SPENDE | *Datenschutz* | <font color="green">+148,00</font> | -3.521,20 |
 | K-172 | 2019-04-22 | SPENDE | *Datenschutz* | <font color="green">+669,20</font> | -2.852,00 |
+| K-173 | 2019-04-22 | BUCHH | Übergewicht / Visa-Gebühren / Taxi Mbeya- Sumbawanga | <font color="green">+600,00</font> | -2.252,00 |
+| K-174 | 2019-04-22 | SONST | Medikamente Dr. Jipemba | <font color="red">-600,00</font> | -2.852,00 |
+| K-175 | 2019-05-02 | SONST | Umbuchung von Bank für Sozialwirtschaft Auslagenerstattung | <font color="green">+2.852,00</font> | -0,00 |
+| K-176 | 2019-06-01 | SONST | Parkhausgebühr Willy Heckelei für Vortrag bei Kindenchirurgen über Sumbawanga in Trier | <font color="red">-90,00</font> | -90,00 |
+| K-177 | 2019-06-01 | SONST | Tagungsgebühr Willy Heckelei für Vortrag bei Kindenchirurgen über Sumbawanga in Trier | <font color="red">-10,20</font> | -100,20 |
+| K-178 | 2019-06-01 | SPENDE | *Datenschutz* | <font color="red">-72,44</font> | -172,64 |
+| K-179 | 2019-06-01 | BUCHH | Benzinkosten Willy Heckelei für Vortrag bei Kindenchirurgen über Sumbawanga in Trier | <font color="red">-42,04</font> | -214,68 |
+| K-180 | 2019-06-01 | SPENDE | *Datenschutz* | <font color="green">+210,00</font> | -4,68 |
+| K-181 | 2019-06-01 | SPENDE | *Datenschutz* | <font color="green">+4,68</font> | -0,00 |
+| K-182 | 2019-08-14 | SPENDE | *Datenschutz* | <font color="green">+500,00</font> | 500,00 |
+| K-183 | 2019-08-15 | REISE | Ticket DB Dresden - Frankfurt | <font color="red">-58,00</font> | 442,00 |
+| K-184 | 2019-08-16 | VISA | *Datenschutz* | <font color="red">-50,00</font> | 392,00 |
+| K-185 | 2019-08-16 | UNTERB | Übernachtung Strotkötter Kurasini Dar-es-Salaam | <font color="red">-20,00</font> | 372,00 |
+| K-186 | 2019-08-23 | MAT | 2 Höllensteinstifte | <font color="red">-6,33</font> | 365,67 |
+| K-187 | 2019-08-27 | PATIENT | Röntgen Pat. Chaiass | <font color="red">-7,92</font> | 357,75 |
+| K-188 | 2019-08-27 | PATIENT | Röntgen Pat. Lauerk | <font color="red">-7,92</font> | 349,83 |
+| K-189 | 2019-08-28 | PATIENT | Food & Beverages  | <font color="red">-150,00</font> | 199,83 |
+| K-190 | 2019-08-28 | VISA | *Datenschutz* | <font color="red">-150,00</font> | 49,83 |
+| K-191 | 2019-08-28 | ENTW | Dr. Jipemba compensation for training | <font color="red">-100,00</font> | -50,17 |
+| K-192 | 2019-08-28 | MAT | Verbandsstoffe / Handschuhe  | <font color="red">-389,08</font> | -439,25 |
+| K-193 | 2019-08-30 | REISE | Ticket DB Frankfurt - Dresden | <font color="red">-60,75</font> | -500,00 |
+| K-194 | 2019-08-31 | BUCHH | Ausgleich Barkasse | <font color="green">+500,00</font> | -0,00 |
+| K-195 | 2019-09-01 | PATIENT | Plattenosteosynthese im Mbalisi Hospital für mama Gilles | <font color="red">-193,42</font> | -193,42 |
+| K-196 | 2019-09-06 | BUCHH | Bankspesen | <font color="red">-11,61</font> | -205,03 |
+| K-197 | 2019-09-06 | REISE | Francis Ndaga - Permits Tosamaganga - Fahrt nach Dodoma | <font color="red">-193,42</font> | -398,45 |
+| K-198 | 2019-09-06 | BUCHH | Bankspesen | <font color="red">-11,61</font> | -410,06 |
+| K-199 | 2019-09-06 | MAT | Dr. Jipemba - Medical Devices und Drugs | <font color="red">-249,52</font> | -659,57 |
+| K-200 | 2019-09-09 | BUCHH | Umbuchung von Bank für Sozialwirtschaft  | <font color="green">+500,00</font> | -159,57 |
+| K-201 | 2019-09-09 | SONST | Telefonkosten | <font color="red">-100,00</font> | -259,57 |
+| K-202 | 2019-09-09 | TRANS | Portokosten August  | <font color="red">-100,00</font> | -359,57 |
+| K-203 | 2019-09-09 | VISA | *Datenschutz* | <font color="red">-100,00</font> | -459,57 |
+| K-204 | 2019-09-12 | BUCHH | Umbuchung von 144601 für Barkasse | <font color="green">+1.500,00</font> | 1.040,43 |
+| K-205 | 2019-09-16 | TRANS | Übergewicht | <font color="red">-21,66</font> | 1.018,76 |
+| K-206 | 2019-09-17 | MAT | Povidone / Bandagen / Desinfektionslösung | <font color="red">-195,36</font> | 823,40 |
+| K-207 | 2019-09-17 | SONST | Reifen Defekt | <font color="red">-38,68</font> | 784,72 |
+| K-208 | 2019-09-17 | MAT | Handdesinfektionsmittel | <font color="red">-19,34</font> | 765,38 |
+| K-209 | 2019-09-19 | MAT | Medikamente Vitus | <font color="red">-10,25</font> | 755,13 |
+| K-210 | 2019-09-19 | MAT | Medikamente Justina | <font color="red">-10,25</font> | 744,87 |
+| K-211 | 2019-09-20 | PATIENT | Physiotherapie mit Hausbesuch bei Querschnittsgelähmten Patienten | <font color="red">-77,37</font> | 667,50 |
+| K-212 | 2019-09-20 | PATIENT | Verpflegung für 2 Verbrennungskinder | <font color="red">-77,37</font> | 590,14 |
+| K-213 | 2019-09-21 | REISE | Besuch der dispensary in Mwimva | <font color="red">-38,68</font> | 551,45 |
+| K-214 | 2019-09-23 | MAT | Bandagen | <font color="red">-30,75</font> | 520,70 |
+| K-215 | 2019-09-25 | PATIENT | Medikamente für 5 Verbrennungskinder | <font color="red">-96,71</font> | 423,98 |
+| K-216 | 2019-09-25 | UNTERB | Accommodation Mbeya incl. Fahrer | <font color="red">-48,74</font> | 375,24 |
+| K-217 | 2019-09-25 | UNTERB | Accommodation Sumbawanga | <font color="red">-116,05</font> | 259,19 |
+| K-218 | 2019-09-25 | REISE | Francis Ndaga - Permits Team Wetter - Fahrt nach Dodoma | <font color="red">-193,42</font> | 65,76 |
+| K-219 | 2019-09-25 | REISE | Francis Ndaga - Permits camp22 - Fahrt nach Dodoma | <font color="red">-193,42</font> | -127,66 |
+| K-220 | 2019-09-26 | SPENDE | *Datenschutz* | <font color="green">+450,00</font> | 322,34 |
+| K-221 | 2019-09-30 | SONST | Internet Sumbawanga | <font color="red">-48,36</font> | 273,98 |
+| K-222 | 2019-09-30 | SONST | Telefonkosten | <font color="red">-185,69</font> | 88,30 |
 
 
