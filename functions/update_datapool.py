@@ -92,7 +92,7 @@ def insertSummary(fd_jahr):
 
         ### add summation
         tmp+='| **TOTAL** | **'+fcurrency(summe_startbetrag)+ '** | **'+fcurrency(summe_haben)+'** | **'+fcurrency(summe_soll)+'** | **'+fcurrency(summe_saldo)+'** | **'+fcurrency(summe_differenz)+'** |\n'
-        tmp+='\n<hr>'
+        tmp+='\n<hr>\n\n'
 
 
         file=open(fd_jahr+'/summary.md','r')
@@ -168,6 +168,7 @@ def updateFile(fn):
     file=open(fn,'r')
     t=file.read()
     file.close()
+    t=t.replace('\\,','&#44;')
     R=t.split('\n')
 
     ### check headline
